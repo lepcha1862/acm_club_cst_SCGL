@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Membership Registration | ACM CST</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-content">
+
+            <a href="index.html" class="logo">
+                ACM<span>CST</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#">Contact</a>
+                <a href="membership.html" class="active">Membership</a>
+                <a href="#">Events</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Registration Section -->
+    <main class="registration-section">
+
+        <div class="container">
+
+            <div class="registration-header">
+                <p class="section-label">BECOME A MEMBER</p>
+
+                <h1>
+                    Join the <span>ACM Club.</span>
+                </h1>
+
+                <p>
+                    Become part of a community of students who are
+                    passionate about technology, innovation and
+                    problem solving.
+                </p>
+            </div>
+
+
+            <!-- Registration Form -->
+            <form class="registration-form">
+
+                <!-- Personal Information -->
+                <div class="form-section">
+
+                    <h2>Personal Information</h2>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="full-name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="full-name"
+                                name="full-name"
+                                placeholder="Enter your full name"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="student-id">
+                                Student ID
+                            </label>
+
+                            <input
+                                type="text"
+                                id="student-id"
+                                name="student-id"
+                                placeholder="e.g. 02230001"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="example@rub.edu.bt"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Enter your phone number"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Academic Information -->
+                <div class="form-section">
+
+                    <h2>Academic Information</h2>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="programme">
+                                Programme
+                            </label>
+
+                            <select
+                                id="programme"
+                                name="programme"
+                                required
+                            >
+                                <option value="">
+                                    Select your programme
+                                </option>
+
+                                <option value="be-it">
+                                    BE Information Technology
+                                </option>
+
+                                <option value="be-software">
+                                    BE Software Engineering
+                                </option>
+
+                                <option value="be-electronics">
+                                    BE Electronics and Communication
+                                </option>
+
+                                <option value="be-civil">
+                                    BE Civil Engineering
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="year">
+                                Year of Study
+                            </label>
+
+                            <select
+                                id="year"
+                                name="year"
+                                required
+                            >
+                                <option value="">
+                                    Select your year
+                                </option>
+
+                                <option value="1">
+                                    Year 1
+                                </option>
+
+                                <option value="2">
+                                    Year 2
+                                </option>
+
+                                <option value="3">
+                                    Year 3
+                                </option>
+
+                                <option value="4">
+                                    Year 4
+                                </option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Interests -->
+                <div class="form-section">
+
+                    <h2>Your Interests</h2>
+
+                    <div class="form-group">
+
+                        <label>
+                            Areas of Interest
+                        </label>
+
+                        <div class="checkbox-grid">
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="interest"
+                                    value="programming"
+                                >
+                                Programming
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="interest"
+                                    value="web-development"
+                                >
+                                Web Development
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="interest"
+                                    value="ai"
+                                >
+                                Artificial Intelligence
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="interest"
+                                    value="cybersecurity"
+                                >
+                                Cybersecurity
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="interest"
+                                    value="iot"
+                                >
+                                IoT
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input
+                                    type="checkbox"
+                                    name="interest"
+                                    value="design"
+                                >
+                                UI/UX Design
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="reason">
+                            Why do you want to join?
+                        </label>
+
+                        <textarea
+                            id="reason"
+                            name="reason"
+                            rows="5"
+                            placeholder="Tell us a little about why you want to join the club..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Submit -->
+                <div class="form-submit">
+
+                    <button type="submit" class="submit-button">
+                        Submit Registration
+                    </button>
+
+                    <p>
+                        By submitting this form, you agree to provide
+                        accurate information.
+                    </p>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <p>© 2026 ACM Club CST</p>
+
+            <p>
+                College of Science and Technology
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
