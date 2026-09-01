@@ -258,6 +258,117 @@ body {
 
 
 /* =========================
+   Events Page
+========================= */
+
+.events-page {
+    padding: 80px 0 100px;
+    min-height: calc(100vh - 152px);
+}
+
+.events-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.events-header h2 {
+    font-size: 2.7rem;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+}
+
+.events-header h2 span {
+    color: #2563eb;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.event-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+    border-color: #cbd5e1;
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    border-radius: 12px;
+    padding: 12px 16px;
+    min-width: 65px;
+    height: fit-content;
+}
+
+.event-date .day {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #2563eb;
+    line-height: 1;
+}
+
+.event-date .month {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #1d4ed8;
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2563eb;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.event-details h3 {
+    font-size: 1.25rem;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.event-details p {
+    font-size: 0.925rem;
+    color: #64748b;
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+
+.event-link {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.event-link:hover {
+    color: #1d4ed8;
+}
+
+
+/* =========================
    Footer
 ========================= */
 
@@ -314,6 +425,21 @@ footer {
     .about-content {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+
+    .events-page {
+        padding: 40px 0 60px;
+    }
+
+    .event-card {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .event-date {
+        flex-direction: row;
+        gap: 8px;
+        width: fit-content;
     }
 
     .footer-content {
