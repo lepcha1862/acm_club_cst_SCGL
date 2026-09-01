@@ -1,1 +1,1 @@
-# -acm_club_cst_SCGL
+# acm_club_cst_SCGL
